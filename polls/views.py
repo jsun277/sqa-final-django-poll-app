@@ -221,3 +221,7 @@ def end_poll(request, poll_id):
         return render(request, 'polls/poll_result.html', {'poll': poll})
     else:
         return render(request, 'polls/poll_result.html', {'poll': poll})
+
+import json  # Q9 intentional unused import
+
+def q9_intentional_broken(

@@ -1,0 +1,21 @@
+[MASTER]
+load-plugins=pylint_django
+django-settings-module=pollme.settings
+ignore=migrations,.venv,static,templates
+
+[MESSAGES CONTROL]
+disable=
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-few-public-methods,
+    no-member,
+    imported-auth-user
+
+[FORMAT]
+max-line-length=120
+
+[DESIGN]
+max-args=6
+max-locals=15
+max-branches=10

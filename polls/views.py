@@ -59,7 +59,7 @@ def polls_add(request):
     if request.user.has_perm('polls.add_poll'):
         if request.method == 'POST':
             form = PollAddForm(request.POST)
-            if form.is_valid:
+            if form.is_valid():
                 poll = form.save(commit=False)
                 poll.owner = request.user
                 poll.save()
@@ -90,7 +90,7 @@ def polls_edit(request, poll_id):
 
     if request.method == 'POST':
         form = EditPollForm(request.POST, instance=poll)
-        if form.is_valid:
+        if form.is_valid():
             form.save()
             messages.success(request, "Poll Updated successfully.",
                              extra_tags='alert alert-success alert-dismissible fade show')
@@ -121,7 +121,7 @@ def add_choice(request, poll_id):
 
     if request.method == 'POST':
         form = ChoiceAddForm(request.POST)
-        if form.is_valid:
+        if form.is_valid():
             new_choice = form.save(commit=False)
             new_choice.poll = poll
             new_choice.save()
@@ -145,7 +145,7 @@ def choice_edit(request, choice_id):
 
     if request.method == 'POST':
         form = ChoiceAddForm(request.POST, instance=choice)
-        if form.is_valid:
+        if form.is_valid():
             new_choice = form.save(commit=False)
             new_choice.poll = poll
             new_choice.save()

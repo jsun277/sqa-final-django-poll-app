@@ -1,0 +1,30 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "pollme.settings"
+python_files = ["test_*.py"]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = [
+    "integration: tests that exercise real component boundaries (DB, template)",
+]
+
+[tool.coverage.run]
+source = ["polls", "accounts"]
+omit = [
+    "*/migrations/*",
+    "*/tests/*",
+    "*/tests.py",
+    "*/__init__.py",
+    "*/apps.py",
+    "*/admin.py",
+    "manage.py",
+    "seeder.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+exclude_lines = [
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]

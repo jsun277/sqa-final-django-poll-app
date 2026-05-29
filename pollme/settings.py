@@ -78,7 +78,11 @@ WSGI_APPLICATION = "pollme.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        # Refactor for testability (Q5): env override lets E2E suite use an
+        # isolated sqlite file without touching the dev DB.
+        "NAME": os.environ.get(
+            "DJANGO_DB_PATH", os.path.join(BASE_DIR, "db.sqlite3")
+        ),
     }
 }
 

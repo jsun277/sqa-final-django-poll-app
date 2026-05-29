@@ -1,0 +1,53 @@
+************* Module polls.models
+polls/models.py:4:0: C0411: standard import "secrets" should be placed before third party imports "django.contrib.auth.models.User", "django.db.models", "django.utils.timezone" (wrong-import-order)
+************* Module polls.tests
+polls/tests.py:4:0: W0611: Unused timezone imported from django.utils (unused-import)
+************* Module polls.views
+polls/views.py:72:0: C0301: Line too long (128/120) (line-too-long)
+polls/views.py:59:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls/views.py:62:15: W0125: Using a conditional statement with a constant value (using-constant-test)
+polls/views.py:93:11: W0125: Using a conditional statement with a constant value (using-constant-test)
+polls/views.py:124:11: W0125: Using a conditional statement with a constant value (using-constant-test)
+polls/views.py:148:11: W0125: Using a conditional statement with a constant value (using-constant-test)
+polls/views.py:199:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls/views.py:218:4: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+polls/views.py:8:0: C0411: third party import "django.http.HttpResponse" should be placed before local imports "models.Poll", "forms.PollAddForm" (wrong-import-order)
+************* Module accounts.models
+accounts/models.py:1:0: W0611: Unused models imported from django.db (unused-import)
+************* Module accounts.forms
+accounts/forms.py:2:0: W0611: Unused User imported from django.contrib.auth.models (unused-import)
+************* Module accounts.admin
+accounts/admin.py:1:0: W0611: Unused admin imported from django.contrib (unused-import)
+************* Module accounts.tests
+accounts/tests.py:1:0: W0611: Unused TestCase imported from django.test (unused-import)
+************* Module accounts.urls
+accounts/urls.py:10:0: C0304: Final newline missing (missing-final-newline)
+************* Module accounts.views
+accounts/views.py:64:0: C0301: Line too long (134/120) (line-too-long)
+accounts/views.py:15:8: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts/views.py:56:12: R1705: Unnecessary "else" after "return", remove the "else" and de-indent the code inside it (no-else-return)
+accounts/views.py:5:0: C0411: third party import "django.contrib.messages" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts/views.py:6:0: C0411: third party import "django.http.HttpResponse" should be placed before local import "forms.UserRegistrationForm" (wrong-import-order)
+accounts/views.py:6:0: W0611: Unused HttpResponse imported from django.http (unused-import)
+************* Module pollme.views
+pollme/views.py:5:0: C0304: Final newline missing (missing-final-newline)
+************* Module seeder
+seeder.py:6:0: E0401: Unable to import 'faker' (import-error)
+seeder.py:31:12: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+seeder.py:21:8: W0612: Unused variable 'u' (unused-variable)
+seeder.py:58:12: E1128: Assigning result of a function call, where the function returns None (assignment-from-none)
+seeder.py:65:12: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+seeder.py:58:12: W0612: Unused variable 'c' (unused-variable)
+seeder.py:87:12: E1128: Assigning result of a function call, where the function returns None (assignment-from-none)
+seeder.py:95:16: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+seeder.py:87:12: W0612: Unused variable 'v' (unused-variable)
+seeder.py:117:10: C0209: Formatting a regular string which could be an f-string (consider-using-f-string)
+seeder.py:2:0: C0411: third party import "django.contrib.auth.models.User" should be placed before first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:3:0: C0411: standard import "datetime" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:4:0: C0411: standard import "random" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:5:0: C0411: standard import "time" should be placed before third party import "django.contrib.auth.models.User" and first party import "polls.models.Choice"  (wrong-import-order)
+seeder.py:6:0: C0411: third party import "faker.Faker" should be placed before first party import "polls.models.Choice"  (wrong-import-order)
+
+------------------------------------------------------------------
+Your code has been rated at 8.79/10 (previous run: 9.93/10, -1.14)
+

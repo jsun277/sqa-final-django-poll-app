@@ -1,9 +1,15 @@
 *.log
 *.pot
 *.pyc
+.DS_Store
 __pycache__/
 local_settings.py
 db.sqlite3
+*.sqlite3
 media
 venv
-.vscode
+.venv/
+.pytest_cache/
+.pylint_cache/
+.coverage
+.vscode/

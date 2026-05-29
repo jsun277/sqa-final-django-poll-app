@@ -1,0 +1,15 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.6, pytest-9.0.3, pluggy-1.6.0 -- /Users/awadakenmagua/mpcs/SQA/final/Django-Poll-App/.venv/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /Users/awadakenmagua/mpcs/SQA/final/Django-Poll-App/ui_tests
+configfile: pytest.ini
+plugins: locust-2.44.0, cov-7.1.0, django-4.12.0, base-url-2.1.0, playwright-0.8.0
+collecting ... collected 5 items
+
+ui_tests/test_e2e.py::test_register_new_user_redirects_to_login[chromium] PASSED [ 20%]
+ui_tests/test_e2e.py::test_login_then_create_poll_lists_it[chromium] PASSED [ 40%]
+ui_tests/test_e2e.py::test_vote_submission_shows_result_page[chromium] PASSED [ 60%]
+ui_tests/test_e2e.py::test_owner_can_edit_poll_text[chromium] PASSED     [ 80%]
+ui_tests/test_e2e.py::test_owner_can_edit_a_choice[chromium] PASSED      [100%]
+
+============================== 5 passed in 4.75s ===============================

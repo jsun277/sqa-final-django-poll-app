@@ -52,5 +52,19 @@ locust -f locustfile_spike.py --headless -H http://127.0.0.1:8765 --html ../evid
 | Q8 | evidence/q8/notes.md |
 | Q9 | .github/workflows/ci.yml, evidence/q9/notes.md |
 
+# Generative AI Disclosure
+
+Generative AI was used only to support application-code work and project organization. I used Claude Code and Codex to help identify small application-code fixes, scaffold configuration files, and organize run commands.
+
+The submitted tests, UAT cases, test plans, performance interpretation, smoke test plan, code-smell analysis, screenshots, and final written answers were reviewed, edited, executed, and validated by me.
+
+AI tools used:
+
+| Tool | Used for |
+|---|---|
+| Claude Code | Helped inspect the Django Poll App source code and identify small application-code fixes for Q1 lint issues. |
+| Codex | Helped check consistency between evidence files and written results, prepare concise run instructions, and summarize/write this disclosure. |
+
+No external blog posts, Stack Overflow answers, or peer-written material were copied into the submission.
 
 The original upstream README is preserved in README_upstream.md.

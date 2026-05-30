@@ -29,7 +29,7 @@ jobs:
 
       # ---------- Q1 lint ----------
       - name: Lint (pylint)
-        run: pylint polls accounts pollme --fail-under=9.0
+        run: pylint polls accounts pollme seeder.py --fail-under=9.0
 
       # ---------- Q3 unit tests ----------
       - name: Unit tests + coverage
